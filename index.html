@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="6 周 Frontend Software Engineering 面试冲刺学习门户，覆盖 JavaScript、React、项目实战与面试表达。"
+    />
+    <title>Frontend 面试冲刺学习门户</title>
+    <script>
+      const savedTheme = localStorage.getItem("frontend_portal_theme");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      document.documentElement.dataset.theme = savedTheme || (prefersLight ? "light" : "dark");
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
